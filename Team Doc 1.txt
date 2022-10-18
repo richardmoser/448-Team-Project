@@ -1,0 +1,168 @@
+﻿To Be Determined
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+____________________________________________________________________________
+
+
+Name: Harrison Reed 
+Role: Project Manager
+Contact Info: 
+* Phone# : 720-633-5501 
+* Email: harrison.reed16@gmail.com / harrison.reed16@ku.edu
+Available Times: 
+* M : 4:00PM - 9:00PM 
+* T: 6:30PM - 9:00PM 
+* W: 12:00PM - 9:00PM 
+* Th: 4:00PM - 9:00PM 
+* F: 4:00PM - 6:00PM 
+* Sat: 2:00PM - 6:00PM 
+* Sun: 2:00PM - 6:00PM
+Major: Computer Science
+Year: Senior
+Programming Languages: Java, C++, HTML, Javascript, Haskell, Python
+Hobbies: Gaming, Golf, Skiing
+
+
+____________________________________________________________________________
+
+
+Name: Isaac Lee
+Role: QA Engineer, Developer
+Contact Info: 
+Phone#: 785-423-7002
+Email: 2starwook@gmail.com / isaaclee192829@ku.edu
+Available time: 
+        Monday: 
+        Tuesday: 
+        Wednesday:
+        Thursday: 
+        Friday: 
+Major: Computer Science
+Year: Junior
+Programming Language: C++, Python, HTML, 
+Hobbies: Swimming, Tennis
+
+
+____________________________________________________________________________
+
+
+Name: Mackenzie Meier
+Role: Developer
+Contact Info:
+Phone: 913-238-4450
+Email: mackenziem146@gmail.com / m248m961@ku.edu
+Available Time: 
+Monday: 4 - 9pm
+Tuesday: 12:30 - 2:30pm, 4 - 9pm
+Wednesday: 4 - 7pm
+Thursday: 12:30 - 2:30pm, 4 - 9pm
+Friday: 4 - 9pm
+Saturday: All day
+Sunday: All day until 4
+Major: Computer Engineering
+Year: Junior
+Programming Languages: C++, Python, Java, HTML
+Hobbies: Reading, Piano, Dancing
+
+
+____________________________________________________________________________
+
+
+Richard Moser 
+Role: Developer
+Contact info: 
+(785) 431-9552 
+moserrj@ku.edu / yahoo.com
+Availability: 
+Mon        10AM - 9PM
+Tues         8PM - 10PM
+Wed         11AM - 2:30PM & 4:30PM - 9PM
+Thur         4PM - 9PM
+Fri         1PM - 9PM
+Sat         10AM - 10PM
+Sun         3PM - 9PM
+Major: Interdisciplinary Computing with a focus in Physics
+Year: Sophomore/Junior (nontraditional)
+Programming Languages: Python, limited C++, minimal HTML
+Hobbies: 3D printing, costuming, cooking
+
+
+____________________________________________________________________________
+Meeting Log
+
+
+Wednesday, September 7th : 12:00PM - 1:00PM
+Members in attendance: Richard Moser, Harrison Reed, Isaac Lee, Mackenzie Meier
+Topics of discussion:
+        Meet & greet
+        Languages and class backgrounds
+        Project file 1 requirements and content
+        Team name (inconclusive)
+        Project ideas (inconclusive)
+        GitHub repo creation and user authentication
+
+
+Thursday, September 15th : 9:00AM - 11:00AM
+Members in attendance: Richard Moser, Harrison Reed, Mackenzie Meier
+Topics of discussion:
+        Team Project ideas
+* Youtube history file formatting software/website
+* Non-Euclidian 3d game
+* Spooky game
+* Browser extension
+* 2d puzzle game
+* Unity game using free/cheap assets
+* Side scroller
+* Any of the above as a spooky game
+        Video game names @ premises
+
+
+        Created a team discord for text/audio/video communication
