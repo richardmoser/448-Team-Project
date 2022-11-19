@@ -1,81 +1,64 @@
 #include "Map.h"
-#include "TextureManager.h"
+#include "Game.h"
+#include <fstream>
+#include "ECS\ECS.h"
+#include "ECS\Components.h"
 
-int level_one[20][25] = {
+extern Manager manager;
 
-	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{1,2,2,2,0,0,2,2,1,0,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,2,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,2,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
-};
-
-Map::Map() {
-	dirt = TextureManager::LoadTexture("Assets/dirt.png");
-	grass = TextureManager::LoadTexture("Assets/grass.png");
-	water = TextureManager::LoadTexture("Assets/water.png");
-
-	loadMap(level_one);
-
-	src.x = src.y = 0;
-	src.w = dest.w = 32;
-	src.h = dest.h = 32;
-
-	dest.x = dest.y = 0;
-
+Map::Map(std::string tID, int ms, int ts) : texID(tID), mapScale(ms), tileSize(ts)
+{
+	scaledSize = ms * ts;
 }
 
-void Map::loadMap(int arr[20][25]) {
+Map::~Map()
+{
+}
 
-	for (int row = 0; row < 20; row++) {
-		for (int column = 0; column < 25; column++) {
-			map[row][column] = arr[row][column];
+void Map::LoadMap(std::string path, int sizeX, int sizeY)
+{
+	char c;
+	std::fstream mapFile;
+	mapFile.open(path);
+
+	int srcX, srcY;
+
+	for (int y = 0; y < sizeY; y++)
+	{
+		for (int x = 0; x < sizeX; x++)
+		{
+			mapFile.get(c);
+			srcY = atoi(&c) * tileSize;
+			mapFile.get(c);
+			srcX = atoi(&c) * tileSize;
+			AddTile(srcX, srcY, x * scaledSize, y * scaledSize);
+			mapFile.ignore();
 		}
 	}
 
-}
+	mapFile.ignore();
 
-void Map::drawMap() {
-
-
-	int type = 0;
-	for (int row = 0; row < 20; row++) {
-		for (int column = 0; column < 25; column++) {
-
-			type = map[row][column];
-			dest.x = column * 32;
-			dest.y = row * 32;
-
-			switch (type) {
-			case 0:
-				TextureManager::draw(water, src, dest);
-				break;
-			case 1:
-				TextureManager::draw(grass, src, dest);
-				break;
-			case 2:
-				TextureManager::draw(dirt, src, dest);
-				break;
-			default:
-				break;
+	for (int y = 0; y < sizeY; y++)
+	{
+		for (int x = 0; x < sizeX; x++)
+		{
+			mapFile.get(c);
+			if (c == '1')
+			{
+				auto& tcol(manager.addEntity());
+				tcol.addComponent<ColliderComponent>("terrain", x * scaledSize, y * scaledSize, scaledSize);
+				tcol.addGroup(Game::groupColliders);
 			}
+			mapFile.ignore();
 		}
 	}
 
+	mapFile.close();
 }
-/*Added Texture Map functionality( This is under Map.cpp and Map.h). This allows for drawing the map the player is currently on. Also added The Entity Component System(This is under ECS.h and Components.h). This allows us to better manage the Entities in our system, i.e players/ai.V2*/
+
+void Map::AddTile(int srcX, int srcY, int xpos, int ypos)
+{
+	auto& tile(manager.addEntity());
+	tile.addComponent<TileComponent>(srcX, srcY, xpos, ypos, tileSize, mapScale, texID);
+	tile.addGroup(Game::groupMap);
+}

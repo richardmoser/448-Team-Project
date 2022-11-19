@@ -1,39 +1,42 @@
-#ifndef GAME_H
-#define GAME_H
+#pragma once
+
 #include "SDL.h"
 #include "SDL_image.h"
-#include <stdio.h>
 #include <iostream>
+#include <vector>
 
-class game {
+class AssetManager;
+class ColliderComponent;
 
+class Game
+{
 public:
-	game();
-	~game();
+	Game();
+	~Game();
 
-	//create our game window
-	//@param tite - The title of the window, xpos - The x Position of the window, ypos - The y Posistion of the window, width - The width of the window, height - the Height of the window, fullscreen - wether or not we want to render fullscreen or not(false - windowed, true- fullscreen)
-	void init(const char* title, int xpos, int ypos, int width, int height, bool fullscreen);
+	void init(const char* title, int width, int height, bool fullscreen);
 
-	//handle all of the events in the game
 	void handleEvents();
-	//update characters, items, etc
 	void update();
-	//create renderer
+	bool running() { return isRunning; }
 	void render();
-	//destroys our game window
 	void clean();
 
-	bool running() { return isRunning; };
-
-	static SDL_Renderer* renderer;
+	static SDL_Renderer *renderer;
+	static SDL_Event event;
+	static bool isRunning;
+	static SDL_Rect camera;
+	static AssetManager* assets;
+	enum groupLabels : std::size_t
+	{
+		groupMap,
+		groupPlayers,
+		groupColliders,
+		groupProjectiles
+	};
 
 private:
-	bool isRunning;
-	SDL_Window* window;
+
 	int cnt = 0;
-
+	SDL_Window *window;
 };
-
-#endif // !GAME_H
-
