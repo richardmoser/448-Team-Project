@@ -1,0 +1,12 @@
+﻿  Game.cpp
+C:\Users\harri\OneDrive\Documents\Dev2\BirchEngine-master\BirchEngine\Src\Game.cpp(153,153): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\harri\OneDrive\Documents\Dev2\BirchEngine-master\BirchEngine\Src\Game.cpp(153,94): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\harri\OneDrive\Documents\Dev2\BirchEngine-master\BirchEngine\Src\Game.cpp(154,156): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\harri\OneDrive\Documents\Dev2\BirchEngine-master\BirchEngine\Src\Game.cpp(154,96): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\harri\OneDrive\Documents\Dev2\BirchEngine-master\BirchEngine\Src\ECS\ECS.h(93,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\harri\OneDrive\Documents\Dev2\BirchEngine-master\BirchEngine\Src\Game.cpp(76): message : see reference to function template instantiation 'T &Entity::addComponent<ColliderComponent,const char(&)[7],float&,float&,int>(const char (&)[7],float &,float &,int &&)' being compiled
+          with
+          [
+              T=ColliderComponent
+          ]
+  BirchEngine.vcxproj -> C:\Users\harri\OneDrive\Documents\Dev2\BirchEngine-master\bin\Win32\Debug\BirchEngine.exe
