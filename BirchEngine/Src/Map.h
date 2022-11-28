@@ -1,11 +1,10 @@
 #pragma once
 #include <string>
 
-class Map 
+class Map
 {
 public:
-	 
-	Map();
+
 	Map(std::string tID, int ms, int ts);
 	~Map();
 

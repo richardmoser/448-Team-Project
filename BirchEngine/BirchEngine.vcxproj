@@ -72,49 +72,49 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -123,14 +123,14 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -139,18 +139,19 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\include;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\harri\OneDrive\Documents\Dev2\SDL2_mixer-2.6.2\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_ttf-2.0.14\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2_image-2.0.1\lib\x86;C:\Users\harri\OneDrive\Documents\Dev2\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Src\AssetManager.cpp" />
+    <ClCompile Include="Src\Button.cpp" />
     <ClCompile Include="Src\Collision.cpp" />
     <ClCompile Include="Src\ECS\ECS.cpp" />
     <ClCompile Include="Src\Game.cpp" />
@@ -163,12 +164,14 @@
     <ClInclude Include="Src\AssetManager.h" />
     <ClInclude Include="Src\Collision.h" />
     <ClInclude Include="Src\ECS\Animation.h" />
+    <ClInclude Include="Src\ECS\Button.h" />
     <ClInclude Include="Src\ECS\ColliderComponent.h" />
     <ClInclude Include="Src\ECS\Components.h" />
     <ClInclude Include="Src\ECS\ECS.h" />
     <ClInclude Include="Src\ECS\enemy.h" />
     <ClInclude Include="Src\ECS\HitboxComponent.h" />
     <ClInclude Include="Src\ECS\KeyboardController.h" />
+    <ClInclude Include="Src\ECS\Mouse.h" />
     <ClInclude Include="Src\ECS\player.h" />
     <ClInclude Include="Src\ECS\ProjectileComponent.h" />
     <ClInclude Include="Src\ECS\TileComponent.h" />

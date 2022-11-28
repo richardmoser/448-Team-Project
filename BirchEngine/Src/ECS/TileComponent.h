@@ -12,6 +12,7 @@ public:
 	SDL_Texture * texture;
 	SDL_Rect srcRect, destRect;
 	Vector2D position;
+	std::string tid;
 
 	TileComponent() = default;
 
@@ -20,16 +21,18 @@ public:
 		SDL_DestroyTexture(texture);
 	}
 
-	TileComponent(int srcX, int srcY, int xpos, int ypos, int tsize, int tscale, std::string id)
+	TileComponent(int srcX, int srcY, int xpos, int ypos, int tHeight, int tscale, std::string id)
 	{
 		texture = Game::assets->GetTexture(id);
-
+		tid = id;
 		srcRect.x = srcX;
 		srcRect.y = srcY;
-		srcRect.w = srcRect.h = tsize;
+		//srcRect.w = tWidth;
+		srcRect.h = srcRect.w = tHeight;
 		position.x = static_cast<float>(xpos);
 		position.y = static_cast<float>(ypos);
-		destRect.w = destRect.h = tsize * tscale;
+		destRect.w = tHeight * tscale;
+		destRect.h = tHeight * tscale;
 	}
 
 	void update() override

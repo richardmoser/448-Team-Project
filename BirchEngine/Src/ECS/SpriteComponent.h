@@ -42,11 +42,13 @@ public:
 		Animation walk = Animation(1, 8, 100);
 		Animation attack = Animation(2, 1, 100);
 		Animation jump = Animation(3, 1, 100);
+		Animation dead = Animation(4, 6, 200);
 
 		animations.emplace("Idle", idle);
 		animations.emplace("Walk", walk);
 		animations.emplace("Attack", attack);
 		animations.emplace("Jump", jump);
+		animations.emplace("Dead", dead);
 
 		Play("Idle");
 
@@ -100,8 +102,8 @@ public:
 		speed = animations[animName].speed;
 	}
 
-	void attack() {
-		health -= 10;
+	void attack(int thealth) {
+		health -= thealth;
 	}
 
 };

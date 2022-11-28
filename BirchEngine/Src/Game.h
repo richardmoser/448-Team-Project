@@ -6,6 +6,8 @@
 #include "Map.h"
 #include <iostream>
 #include <vector>
+#include <SDL_mixer.h>
+//#include "ECS/Button.h"
 
 class AssetManager;
 class ColliderComponent;
@@ -13,16 +15,26 @@ class ColliderComponent;
 class Game
 {
 public:
+	int currLevel = 0;
+	std::vector<bool> myLevels = {false, false, false};
+	int enemyLeft = 0;
+	bool finish = false;
+
 	Game();
 	~Game();
 
-	void init(const char* title, int width, int height, bool fullscreen);
+	int width, height;
 
+	void init(const char* title, int width, int height, bool fullscreen);
+	void updateMap(int level);
 	void handleEvents();
 	void update();
 	bool running() { return isRunning; }
+	int attackedTimer = 0;
 	void render();
 	void clean();
+	void addEnemies(int x, int y, int tHealth);
+	void setting();
 	static void changeMap(Map* tmap);
 
 	static SDL_Renderer *renderer;
@@ -36,7 +48,9 @@ public:
 		groupPlayers,
 		groupColliders,
 		groupProjectiles,
-		groupEnemies
+		groupEnemies,
+		groupSMap,
+		GroupUI
 	};
 
 	SDL_Window* getWindow() {
@@ -46,6 +60,10 @@ public:
 	Vector2D playerPos;
 	Vector2D enemyPos;
 	SDL_Window* window;
+	SDL_Window* settWindow;
+	bool mapLoaded = false;
+	bool map1 = false;
+	
 
 private:
 

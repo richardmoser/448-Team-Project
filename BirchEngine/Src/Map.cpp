@@ -6,12 +6,12 @@
 
 extern Manager manager;
 
-Map::Map() {
-
-}
 
 Map::Map(std::string tID, int ms, int ts) : texID(tID), mapScale(ms), tileSize(ts)
 {
+	if(tID == "level0"){
+		scaledSize = (160 * 100);
+	}
 	scaledSize = ms * ts;
 }
 
@@ -24,8 +24,6 @@ void Map::LoadMap(std::string path, int sizeX, int sizeY)
 	char c;
 	std::fstream mapFile;
 	mapFile.open(path);
-
-	std::cout << path << " is " << mapFile.is_open();
 
 	int srcX, srcY;
 
@@ -54,7 +52,7 @@ void Map::LoadMap(std::string path, int sizeX, int sizeY)
 				auto& tcol(manager.addEntity());
 				tcol.addComponent<ColliderComponent>("terrain", x * scaledSize, y * scaledSize, scaledSize);
 				tcol.addGroup(Game::groupColliders);
-			}	
+			}
 			mapFile.ignore();
 		}
 	}

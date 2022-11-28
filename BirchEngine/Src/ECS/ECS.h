@@ -150,6 +150,11 @@ public:
 		groupedEntities[mGroup].emplace_back(mEntity);
 	}
 
+	void clearGroup(Entity* mEntity, Group mGroup) {
+		while (groupedEntities[mGroup].size() != 0)
+			groupedEntities[mGroup].pop_back();
+	}
+
 	std::vector<Entity*>& getGroup(Group mGroup)
 	{
 		return groupedEntities[mGroup];

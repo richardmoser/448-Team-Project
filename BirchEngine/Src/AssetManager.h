@@ -18,7 +18,7 @@ public:
 	void CreateProjectile(Vector2D pos, Vector2D vel, int range, int speed, std::string id);
 
 	//texture management
-	void AddTexture(std::string id, const char* path);
+	void AddTexture(std::string id, const char *path);
 	SDL_Texture* GetTexture(std::string id);
 
 	void AddFont(std::string id, std::string path, int fontSize);

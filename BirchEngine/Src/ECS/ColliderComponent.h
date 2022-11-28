@@ -25,7 +25,8 @@ public:
 		tag = t;
 		collider.x = xpos;
 		collider.y = ypos;
-		collider.h = collider.w = size;
+		collider.h = size;
+		collider.w = size;
 	}
 
 	ColliderComponent(std::string t, int xpos, int ypos, int sizeh, int sizew)
@@ -47,7 +48,7 @@ public:
 
 		transform = &entity->getComponent<TransformComponent>();
 
-		tex = TextureManager::LoadTexture("assets/coltex.png");
+		//tex = TextureManager::LoadTexture("assets/coltex.png");
 		srcR = { 0, 0, 32, 32 };
 		destR = { collider.x, collider.y, collider.w, collider.h };
 
@@ -57,10 +58,12 @@ public:
 	{
 		if (tag != "terrain")
 		{
-			collider.x = static_cast<int>(transform->position.x);
+			
 			collider.y = static_cast<int>(transform->position.y);
-			collider.w = transform->width * transform->scale;
+			
+			collider.w = transform->width * transform->scale / 5;
 			collider.h = transform->height * transform->scale;
+			collider.x = static_cast<int>(transform->position.x + collider.w + 12);
 		}
 
 		destR.x = collider.x - Game::camera.x;
@@ -69,7 +72,7 @@ public:
 
 	void draw() override
 	{
-		TextureManager::Draw(tex, srcR, destR, SDL_FLIP_NONE);
+		//TextureManager::Draw(tex, srcR, destR, SDL_FLIP_NONE);
 	}
 
 private:
