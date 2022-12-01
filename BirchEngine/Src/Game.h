@@ -16,19 +16,21 @@ class Game
 {
 public:
 	int currLevel = 0;
-	std::vector<bool> myLevels = {false, false, false};
+	std::vector<bool> myLevels = {false, false, false, false, false};
 	int enemyLeft = 0;
 	bool finish = false;
+	bool muted = false;
 
 	Game();
 	~Game();
 
-	int width, height;
+	int width, height, tempW, tempH;
+	SDL_DisplayMode DM;
 
 	void init(const char* title, int width, int height, bool fullscreen);
 	void updateMap(int level);
 	void handleEvents();
-	void update();
+	void update(std::string FPS);
 	bool running() { return isRunning; }
 	int attackedTimer = 0;
 	void render();
@@ -38,6 +40,7 @@ public:
 	static void changeMap(Map* tmap);
 
 	static SDL_Renderer *renderer;
+    static SDL_Renderer *settRenderer;
 	static SDL_Event event;
 	static bool isRunning;
 	static SDL_Rect camera;
@@ -63,6 +66,8 @@ public:
 	SDL_Window* settWindow;
 	bool mapLoaded = false;
 	bool map1 = false;
+	bool settingWindow = false;
+	SDL_bool fullScreen = SDL_FALSE;
 	
 
 private:

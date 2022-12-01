@@ -17,6 +17,7 @@ public:
 	HitboxComponent *box;
 	Map *pause;
 	TransformComponent *transform;
+	bool press = false;
 	SpriteComponent *sprite;
 	SDL_Window* window;
 	Vector2D gravity{ 0,-2 };
@@ -51,10 +52,11 @@ public:
 		}
 		*/
 
-		if (Game::event.type == SDL_KEYDOWN)
+		if (Game::event.type == SDL_KEYDOWN && sprite->health != 0)
 		{
 			switch (Game::event.key.keysym.sym)
 			{
+				press = true;
 			case SDLK_w:
 				sprite->Play("Attack");
 				break;
@@ -70,7 +72,7 @@ public:
 				}
 				break;
 			case SDLK_a:
-				transform->velocity.x = -2;
+				transform->velocity.x = -4;
 				//transform->velocity.y = 0;
 				sprite->Play("Walk");
 				sprite->spriteFlip = SDL_FLIP_HORIZONTAL;
@@ -87,22 +89,17 @@ public:
 				break;
 
 			case SDLK_d:
-				transform->velocity.x = 2;
+				transform->velocity.x = 4;
 				//transform->velocity.y = 0;
 				sprite->Play("Walk");
 				break;
-			case SDLK_f:
-				sprite->Play("Attack");
-				break;
 			case SDLK_SPACE:
-				
-				
 				sprite->Play("Jump");
 				for (float i = 1; i <= 100; i++) {
 					transform->velocity.y = -1;
 				}
 				break;
-			case SDLK_ESCAPE:
+			case SDLK_1:
 				Game::isRunning = false;
 				break;
 			default:
@@ -112,11 +109,15 @@ public:
 		
 
 		}
+		else if(sprite->health == 0){
+			transform->position = { transform->position.x,transform->position.y };
+		}
 	
-		if (Game::event.type == SDL_KEYUP)
+		if (Game::event.type == SDL_KEYUP && sprite->health != 0)
 		{
 			switch (Game::event.key.keysym.sym)
 			{
+				press = false;
 			case SDLK_w:
 				sprite->Play("Idle");
 				break;
@@ -141,7 +142,7 @@ public:
 				sprite->Play("Idle");
 				break;
 			case SDLK_ESCAPE:
-				Game::isRunning = false;
+				//Game::isRunning = false;
 				break;
 			case SDLK_f:
 				sprite->Play("Idle");
@@ -156,5 +157,9 @@ public:
 				break;
 			}
 		}
+		else if (sprite->health == 0) {
+			transform->position = { transform->position.x,transform->position.y };
+		}
+
 	}
 };

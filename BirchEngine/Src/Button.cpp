@@ -3,9 +3,10 @@
 
 Button::Button() {
 	static SDL_Texture* t = IMG_LoadTexture(Game::renderer, "assets/buttons.png");
-
+	text2 = IMG_LoadTexture(Game::settRenderer, "assets/buttons.png");
 	
 	text = t;
+
 
 	src.h = src.w = 50;
 	src.x = 0;
@@ -18,7 +19,7 @@ Button::Button() {
 void Button::update(Mouse &mouse) {
 
 
-	if (SDL_HasIntersection(&dest, &mouse.rect)) {
+	if (SDL_HasIntersection(&dest, &mouse.point)) {
 		isClicked = true;
 		src.x = 50;
 
@@ -30,5 +31,9 @@ void Button::update(Mouse &mouse) {
 }
 
 void Button::draw() {
-	std::cout << SDL_RenderCopy(Game::renderer, text, &src, &dest);
+	SDL_RenderCopy(Game::renderer, text, &src, &dest);
+}
+
+void Button::draw2() {
+	SDL_RenderCopy(Game::settRenderer, text2, &src, &dest);
 }

@@ -97,13 +97,20 @@ public:
 
 	void Play(const char* animName)
 	{
-		frames = animations[animName].frames;
-		animIndex = animations[animName].index;
-		speed = animations[animName].speed;
+
+
+			frames = animations[animName].frames;
+			animIndex = animations[animName].index;
+			speed = animations[animName].speed;
+		
 	}
 
 	void attack(int thealth) {
 		health -= thealth;
+	}
+
+	bool isDead() {
+		return(health == 0);
 	}
 
 };
